@@ -9,5 +9,5 @@ setup(
     author='William Mathieu',
     author_email='william.mathieu@mail.mcgill.ca',
     keywords=['RF Coils','MRI'],
-    url='https://github.com/wm/RFCoilTools'
+    url='https://github.com/WilliamMathieu/RFCoilTools'
 )
