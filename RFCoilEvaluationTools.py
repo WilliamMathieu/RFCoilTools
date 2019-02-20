@@ -1,4 +1,4 @@
-# RF Coil Design Tool Functions
+ # RF Coil Design Tool Functions
 __author__ = "William Mathieu"
 __copyright__ = "Copyright 2019, William Mathieu"
 __license__ = "MIT"
@@ -23,7 +23,7 @@ def SNRHeatmapGenerator():
     #!/usr/bin/python
     root = Tk()
     root.withdraw()
-    root.filename = filedialog.askopenfilename(initialdir = "/", title = "Select NIfTI file", filetypes = (("NIfTI files","*.nii *.nii.gz"),("all files","*.*")))
+    root.filename = askopenfilename(initialdir = "./", title = "Select NIfTI file", filetypes = (("NIfTI files","*.nii *.nii.gz"),("all files","*.*")))
     #print(root.filename)
     img = nib.load(root.filename)
 
@@ -48,24 +48,26 @@ def SNRHeatmapGenerator():
         global target_slice
         global slice_2
         target_slice = slice_2
-    def Close_start_window():
+    def close_start_window():
         start_window.quit()
         start_window.destroy()
 
     start_window = Tk()
+    # width x height + x_offset + y_offset:
+    root.geometry("170x200+30+30") 
     start_window.title('Select Orientation')
     start_window.config(bg='white')
-    Sagittal_button = Button(start_window, text = "Sagittal", bg='white', command=selectSagittal)
-    Coronal_button = Button(start_window, text = "Coronal", bg='white', command=selectCoronal)
-    Axial_button = Button(start_window, text = "Axial", bg='white', command=selectAxial)
+    Sagittal_button = Button(start_window, text = "Sagittal", bg='white', command=selectSagittal, height = 1, width = 40)
+    Coronal_button = Button(start_window, text = "Coronal", bg='white', command=selectCoronal, height = 1, width = 40)
+    Axial_button = Button(start_window, text = "Axial", bg='white', command=selectAxial, height = 1, width = 40)
     blank_space = Label(start_window, text="          ", bg='white')
-    Close_start_menu = Button(start_window, text = "GO!", bg='white', command=Close_start_window)
+    Close_start_menu = Button(start_window, text = "GO!", bg='white', command=close_start_window)
 
-    Sagittal_button.grid(sticky='n', row = 0, column = 0)
-    Coronal_button.grid(sticky='n', row = 1, column = 0)
-    Axial_button.grid(sticky='n', row = 2, column = 0)
-    blank_space.grid(sticky='n', row = 3, column = 0)
-    Close_start_menu.grid(sticky='n', row = 4, column = 0)
+    Sagittal_button.grid(sticky='we', row = 0, column = 0)
+    Coronal_button.grid(sticky='we', row = 1, column = 0)
+    Axial_button.grid(sticky='we', row = 2, column = 0)
+    blank_space.grid(sticky='we', row = 3, column = 0)
+    Close_start_menu.grid(sticky='we', row = 4, column = 0)
     start_window.mainloop()
 
     NoiseROIradius0 = 10

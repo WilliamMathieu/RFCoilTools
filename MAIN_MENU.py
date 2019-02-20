@@ -6,6 +6,7 @@ __date__ = "19Feb2019"
 from RFCoilDesignTools import *
 from RFCoilEvaluationTools import *
 from tkinter import *
+import sys
 
 def start_LoopCapacitanceCalculator():
     LoopCapacitanceCalculator()
@@ -16,32 +17,33 @@ def start_TotalCapacitanceAndResonanceCalculator():
 def start_SNRHeatmapGenerator():
     SNRHeatmapGenerator()
 
-def Close_start_window():
+def close_main_menu():
     main_menu.quit()
     main_menu.destroy()
+    sys.exit()
 
 main_menu = Tk()
+# width x height + x_offset + y_offset:
+#main_menu.geometry("800x200+30+30")
 main_menu.title('RF Coil Design and Evaluation Tools')
-main_menu.config(bg='lightskyblue')
+main_menu.config(bg='white')
 
-LoopCapacitanceCalculator_button = Button(main_menu, text = "LoopCapacitanceCalculator", bg='white', command=start_LoopCapacitanceCalculator)
-LoopInductanceCalculator_button = Button(main_menu, text = "LoopInductanceCalculator", bg='white', command=start_LoopInductanceCalculator)
-TotalCapacitanceAndResonanceCalculator_button = Button(main_menu, text = "TotalCapacitanceAndResonanceCalculator", bg='white', command=start_TotalCapacitanceAndResonanceCalculator)
-SNRHeatmapGenerator_button = Button(main_menu, text = "SNR Heatmap Generator", bg='white', command=start_SNRHeatmapGenerator)
-blank_space = Label(main_menu, text="          ", bg='white')
-DesignTitle = Label(main_menu, text="Design", bg='white')
-EvaluateTitle = Label(main_menu, text="Evaluate", bg='white')
-Close_start_menu = Button(main_menu, text = "GO!", bg='white', command=Close_main_menu)
+LoopCapacitanceCalculator_button = Button(main_menu, text = "LoopCapacitanceCalculator", bg='white', command=start_LoopCapacitanceCalculator, height = 1, width = 40)
+LoopInductanceCalculator_button = Button(main_menu, text = "LoopInductanceCalculator", bg='white', command=start_LoopInductanceCalculator, height = 1, width = 40)
+TotalCapacitanceAndResonanceCalculator_button = Button(main_menu, text = "TotalCapacitanceAndResonanceCalculator", bg='white', command=start_TotalCapacitanceAndResonanceCalculator, height = 1, width = 40)
+SNRHeatmapGenerator_button = Button(main_menu, text = "SNR Heatmap Generator", bg='white', command=start_SNRHeatmapGenerator, height = 1, width = 40)
+DesignTitle = Label(main_menu, text="DESIGN", bg='white', font=("Microsoft Sans Serif", 12))
+EvaluateTitle = Label(main_menu, text="EVALUATE", bg='white', font=("Microsoft Sans Serif", 12))
+Close_start_menu = Button(main_menu, text = "Exit", bg='white', command=close_main_menu)
 
-DesignTitle.grid(sticky='n', row = 0, column = 0)
-LoopCapacitanceCalculator_button.grid(sticky='n', row = 1, column = 0)
-LoopInductanceCalculator_button.grid(sticky='n', row = 2, column = 0)
-TotalCapacitanceAndResonanceCalculator_button.grid(sticky='n', row = 3, column = 0)
-blank_space.grid(sticky='n', row = 4, column = 0)
-Close_start_menu.grid(sticky='n', row = 5, column = 0)
+DesignTitle.grid(row = 0, column = 0, sticky=(N, S, E, W))
+LoopCapacitanceCalculator_button.grid(row = 1, column = 0, sticky=(N, S, E, W))
+LoopInductanceCalculator_button.grid(row = 2, column = 0, sticky=(N, S, E, W))
+TotalCapacitanceAndResonanceCalculator_button.grid(row = 3, column = 0, sticky=(N, S, E, W))
+Close_start_menu.grid(row = 4, column = 0, columnspan = 2, sticky=(N, S, E, W))
 
-EvaluateTitle.grid(sticky='n', row = 0, column = 1)
-SNRHeatmapGenerator_button.grid(sticky='n', row = 1, column = 1)
+EvaluateTitle.grid(row = 0, column = 1, sticky=(N, S, E, W))
+SNRHeatmapGenerator_button.grid(row = 1, column = 1, sticky=(N, S, E, W))
 
 main_menu.mainloop()
 
