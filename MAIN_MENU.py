@@ -26,8 +26,6 @@ def close_main_menu():
     sys.exit()
 
 main_menu = Tk()
-# width x height + x_offset + y_offset:
-#main_menu.geometry("800x200+30+30")
 main_menu.resizable(width=False, height=False)
 main_menu.title('RF Coil Design and Evaluation Tools')
 main_menu.config(bg='white')

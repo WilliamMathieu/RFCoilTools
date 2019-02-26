@@ -183,7 +183,7 @@ def TotalCapacitanceAndResonanceCalculator():
     Set_capnum_entry.grid(sticky='we', row = 0, column = 1)
     Set_Lloop_label.grid(sticky='we', row = 1, column = 0)
     Set_Lloop_entry.grid(sticky='we', row = 1, column = 1)
-    Next_button.grid(sticky='we', row = 2, column = 0)
+    Next_button.grid(sticky='we', row = 2, column = 0, columnspan=2)
     
     start_window.mainloop()
     
@@ -248,4 +248,3 @@ def TotalCapacitanceAndResonanceCalculator():
     C_tot_result.grid(sticky='we', row = num+3, column = 0, columnspan = 3)
     ResonantFrequency_result.grid(sticky='we', row = num+4, column = 0, columnspan = 3)
     caps_window.mainloop()
-    
