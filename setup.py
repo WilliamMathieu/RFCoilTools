@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='RFCoilTools',
-    version='0.0.1',
+    version='0.0.3',
     description='RF Coil Design and Evaluation Tools',
     license='MIT',
     packages=['RFCoilTools'],
