@@ -3,7 +3,7 @@ RF Coil Design and Evaluation Tools
 
 ## Installation
 
-1. Click *Clone or Download* -> *Download ZIP*
+1. Click *Clone or Download* > *Download ZIP*
 2. Extract the zip file into a directory of your choice
 3. In Command Prompt **cd** to the chosen directory
 4. Run the command:
