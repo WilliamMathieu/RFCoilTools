@@ -13,5 +13,7 @@ RF Coil Design and Evaluation Tools
 
 `py -3 MAIN_MENU.py`
 
-## Included Functions
+## Features
+
+Tools are devided into two categories: design and evaluation. Design tools are suited for estimating the necessary electrical components before building an RF coil. Evaluation tools are used in the coil testing phase to process network and MRI image data.
 
