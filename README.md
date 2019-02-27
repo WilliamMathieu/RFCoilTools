@@ -25,4 +25,4 @@ Tools are devided into two categories: design and evaluation. Design tools are s
 
 ## License
 
-[MIT](LICENSE)
+[MIT License](LICENSE)
