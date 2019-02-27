@@ -17,3 +17,4 @@ RF Coil Design and Evaluation Tools
 
 Tools are devided into two categories: design and evaluation. Design tools are suited for estimating the necessary electrical components before building an RF coil. Evaluation tools are used in the coil testing phase to process network and MRI image data.
 
+![Main Menu](https://github.com/WilliamMathieu/RFCoilTools/tree/master/screenshots/MainMenuScreenshot.PNG)
