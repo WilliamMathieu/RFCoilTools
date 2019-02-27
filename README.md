@@ -22,3 +22,7 @@ Tools are devided into two categories: design and evaluation. Design tools are s
 <p align="center">
   <img src="./screenshots/MainMenuScreenshot2.PNG">
 </p>
+
+## License
+
+[MIT](LICENSE)
