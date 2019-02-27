@@ -20,5 +20,5 @@ Tools are devided into two categories: design and evaluation. Design tools are s
 ### Main Menu
 
 <p align="center">
-  <img src="./screenshots/MainMenuScreenshot.PNG" width="500">
+  <img src="./screenshots/MainMenuScreenshot2.PNG">
 </p>
