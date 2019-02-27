@@ -11,6 +11,7 @@ setup(
     keywords=['RF Coils','MRI'],
     url='https://github.com/WilliamMathieu/RFCoilTools',
     install_requires=[
+        'PyQt5==5.9.2',
         'numpy',
         'scipy',
         'matplotlib',
