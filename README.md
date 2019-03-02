@@ -26,5 +26,4 @@ Tools are devided into two categories: design and evaluation. Design tools are s
 ## License
 
 [Software: MIT License](LICENSE)
-
 [MRI MNI Data: MIT License](MNI Dataset License)
