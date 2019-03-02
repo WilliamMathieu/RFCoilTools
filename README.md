@@ -27,4 +27,4 @@ Tools are devided into two categories: design and evaluation. Design tools are s
 
 [Software: MIT License](LICENSE)
 
-[MRI MNI Data: MIT License](MNI Dataset License)
+[MRI MNI Data: MIT License](https://github.com/WilliamMathieu/RFCoilTools/blob/master/MNI%20Dataset%20License)
