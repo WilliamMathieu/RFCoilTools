@@ -49,9 +49,15 @@ Tools are devided into two categories: design and evaluation. Design tools are s
 <p align="center">
   <img src="./screenshots/">
 </p>
+<p align="center">
+  <img src="./screenshots/">
+</p>
 
 ### SNR Heatmap Generator
 
+<p align="center">
+  <img src="./screenshots/">
+</p>
 <p align="center">
   <img src="./screenshots/">
 </p>
