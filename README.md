@@ -47,19 +47,19 @@ Tools are devided into two categories: design and evaluation. Design tools are s
 ### Analyze Touchstone Data
 
 <p align="center">
-  <img src="./screenshots/">
+  <img src="./screenshots/touchstone1.PNG">
 </p>
 <p align="center">
-  <img src="./screenshots/">
+  <img src="./screenshots/touchstone2.PNG">
 </p>
 
 ### SNR Heatmap Generator
 
 <p align="center">
-  <img src="./screenshots/">
+  <img src="./screenshots/heatmap1.PNG">
 </p>
 <p align="center">
-  <img src="./screenshots/">
+  <img src="./screenshots/heatmap2.PNG">
 </p>
 
 ## Licenses
