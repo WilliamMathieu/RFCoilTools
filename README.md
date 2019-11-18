@@ -23,6 +23,27 @@ Tools are devided into two categories: design and evaluation. Design tools are s
   <img src="./screenshots/MainMenuScreenshot2.PNG">
 </p>
 
+### Loop Inductance Calculator
+
+<p align="center">
+  <img src="./screenshots/InductanceCalc.PNG">
+</p>
+
+### Loop Capacitance Calculator
+
+<p align="center">
+  <img src="./screenshots/CapCalc.PNG">
+</p>
+
+### Total Capacitance and Resonance Calculator
+
+<p align="center">
+  <img src="./screenshots/ResCalc1.PNG">
+</p>
+<p align="center">
+  <img src="./screenshots/ResCalc2.PNG">
+</p>
+
 ## Licenses
 
 This software is released under the [MIT License](LICENSE).
