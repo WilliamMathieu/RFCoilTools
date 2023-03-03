@@ -7,11 +7,11 @@ Requires Python 3.
 2. Extract the .zip file into a directory of your choice
 3. In Command Prompt **cd** to the chosen directory
 4. Run the command:
-`py -3 setup.py install`
+`python setup.py install`
 
 ## Running the Application
 
-`py -3 MAIN_MENU.py`
+`python MAIN_MENU.py`
 
 ## Features
 
