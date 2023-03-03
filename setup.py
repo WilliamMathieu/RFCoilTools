@@ -10,6 +10,7 @@ setup(
     author_email='william.mathieu@mail.mcgill.ca',
     keywords=['RF Coils','MRI'],
     url='https://github.com/WilliamMathieu/RFCoilTools',
+    py_modules=[],
     install_requires=[
         'PyQt5==5.9.2',
         'numpy',
