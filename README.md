@@ -7,7 +7,7 @@ Requires Python 3.
 2. Extract the .zip file into a directory of your choice
 3. In Command Prompt **cd** to the chosen directory
 4. Run the command:
-`python setup.py install`
+`pip install -r requirements.txt`
 
 ## Running the Application
 
