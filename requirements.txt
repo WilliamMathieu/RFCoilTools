@@ -11,3 +11,4 @@ scikit-rf
 matplotlib
 pandas
 PyQt5
+pyqt5
